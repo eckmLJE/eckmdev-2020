@@ -1,3 +1,3 @@
 import Typography from "typography"
-import sutroTheme from "typography-theme-sutro"
-export default new Typography(sutroTheme)
+import noriegaTheme from "typography-theme-noriega"
+export default new Typography(noriegaTheme)

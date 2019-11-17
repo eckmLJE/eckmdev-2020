@@ -1,10 +1,11 @@
 import React from "react"
-
 import SEO from "../components/seo"
+
+import Summary from "../components/summary"
 
 export default () => (
   <>
     <SEO title="Portfolio" />
-    <h2>Portfolio</h2>
+    <Summary>Range of vanilla JavaScript and React along with CSS.</Summary>
   </>
 )
