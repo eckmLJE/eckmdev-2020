@@ -1,11 +1,17 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
-import Layout from "../layouts"
 import SEO from "../components/seo"
 
 export default () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-  </Layout>
+    <h2>Home</h2>
+    <div>
+      <Link to="/portfolio">Portfolio</Link>
+    </div>
+    <div>
+      <Link to="/skills">Skills</Link>
+    </div>
+  </>
 )
