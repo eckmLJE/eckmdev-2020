@@ -7,6 +7,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 1rem;
 
   a {
     text-decoration: none;
@@ -37,7 +38,7 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   position: relative;
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 `
 
 export default () => (
@@ -55,6 +56,9 @@ export default () => (
         <NavItem>
           <Link to="/portfolio">Portfolio</Link>
         </NavItem>
+        {/* <NavItem>
+          <Link to="/experience">Experience</Link>
+        </NavItem> */}
       </NavList>
     </Nav>
   </Header>
