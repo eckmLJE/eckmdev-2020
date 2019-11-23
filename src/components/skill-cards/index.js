@@ -7,7 +7,7 @@ const SkillCards = styled.section`
   padding: 32px 32px;
   list-style: none;
   display: grid;
-  overflow: hidden;
+  /* overflow: hidden; */
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   grid-column-gap: 24px;
@@ -18,12 +18,20 @@ const SkillCards = styled.section`
     grid-row-gap: 32px;
     padding: 24px 24px;
   }
+
+  @media (max-width: 500px) {
+    padding: 24px 8px;
+  }
 `
 
 export default ({ skills }) => (
   <SkillCards>
-    {skills.map(skillSet => (
-      <SkillCard skills={skillSet.skills} headerText={skillSet.header} />
+    {skills.map((skillSet, i) => (
+      <SkillCard
+        key={`skill-set-${i}`}
+        skills={skillSet.skills}
+        headerText={skillSet.header}
+      />
     ))}
   </SkillCards>
 )

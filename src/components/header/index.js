@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
 const Header = styled.header`
@@ -21,9 +21,13 @@ const Header = styled.header`
 
 const Title = styled.h1`
   position: relative;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0;
   padding: 0;
+
+  strong {
+    font-weight: 900;
+  }
 `
 const Nav = styled.nav``
 const NavList = styled.ul`
@@ -39,9 +43,26 @@ const NavItem = styled.li`
   position: relative;
   margin: 0;
   padding: 0.5rem 1rem;
+
+  a {
+    border-bottom: 2px solid transparent;
+    transition: 300ms all ease-out;
+
+    &:hover {
+      border-color: black;
+    }
+  }
+
+  ${({ active }) =>
+    active &&
+    css`
+      a {
+        border-color: black;
+      }
+    `}
 `
 
-export default () => (
+export default ({ path }) => (
   <Header>
     <Link to="/">
       <Title>
@@ -50,15 +71,12 @@ export default () => (
     </Link>
     <Nav>
       <NavList>
-        <NavItem>
+        <NavItem active={path === "/skills/"}>
           <Link to="/skills">Skills</Link>
         </NavItem>
-        <NavItem>
+        <NavItem active={path === "/portfolio/"}>
           <Link to="/portfolio">Portfolio</Link>
         </NavItem>
-        {/* <NavItem>
-          <Link to="/experience">Experience</Link>
-        </NavItem> */}
       </NavList>
     </Nav>
   </Header>

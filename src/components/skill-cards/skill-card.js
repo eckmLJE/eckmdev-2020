@@ -50,7 +50,7 @@ const SkillHero = styled.div`
 
   h5 {
     margin: 0;
-    padding: 24px 0;
+    padding: 24px 8px;
     text-transform: uppercase;
     text-align: center;
     font-size: 0.75rem;

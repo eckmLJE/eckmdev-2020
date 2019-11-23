@@ -12,7 +12,7 @@ const Main = styled.main`
   }
 `
 
-export default ({ children }) => {
+export default ({ children, path }) => {
   return (
     <div
       style={{
@@ -21,7 +21,7 @@ export default ({ children }) => {
         margin: "0 auto",
       }}
     >
-      <Header />
+      <Header path={path} />
       <Main>{children}</Main>
       {/* <Footer /> */}
     </div>

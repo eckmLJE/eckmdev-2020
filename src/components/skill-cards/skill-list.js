@@ -8,6 +8,10 @@ const SkillList = styled.ul`
   list-style: none;
   flex-flow: column wrap;
   width: 40%;
+
+  @media (max-width: 400px) {
+    width: 45%;
+  }
 `
 
 const SkillItem = styled.li`
@@ -28,7 +32,7 @@ const SkillText = styled.h4`
   padding: 0;
   font-size: 14px;
   font-weight: normal;
-  padding-left: 0.75rem;
+  padding-left: 0.65rem;
 `
 
 const Skills = ({ skills }) =>
