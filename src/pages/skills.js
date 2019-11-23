@@ -2,6 +2,8 @@ import React from "react"
 import SEO from "../components/seo"
 
 import Summary from "../components/summary"
+import SkillCards from "../components/skill-cards"
+import skills from "../content/skills"
 
 export default () => (
   <>
@@ -12,5 +14,6 @@ export default () => (
       a preference for working with React and Server-Side React frameworks like
       Next and Gatsby.
     </Summary>
+    <SkillCards skills={skills} />
   </>
 )

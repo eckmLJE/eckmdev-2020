@@ -125,10 +125,6 @@ export default [
         name: "D3",
         logo: D3Logo,
       },
-      //   {
-      //     name: "Three",
-      //     logo: Three,
-      //   },
     ],
   },
 ]

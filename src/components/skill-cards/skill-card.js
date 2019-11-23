@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import SkillList from "./SkillList"
+import SkillList from "./skill-list"
 
 const SkillCard = styled.li`
   width: 100%;
@@ -63,14 +63,14 @@ const SkillHero = styled.div`
   }
 `
 
-export default props => {
-  const listSkills = props.skills.slice(1)
-  const heroSkill = props.skills[0]
+export default ({ skills, headerText }) => {
+  const listSkills = skills.slice(1)
+  const heroSkill = skills[0]
   return (
     <SkillCard>
-      <SkillHeader>{props.headerText}</SkillHeader>
+      <SkillHeader>{headerText}</SkillHeader>
       <SkillBody>
-        <SkillHero logo={heroSkill.logo}>
+        <SkillHero>
           <div />
           <h5>
             <strong>{heroSkill.name}</strong>
