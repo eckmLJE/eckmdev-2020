@@ -24,6 +24,7 @@ const SkillCard = styled.li`
 
 const SkillHeader = styled.h5`
   position: relative;
+  font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
@@ -47,31 +48,43 @@ const SkillHero = styled.div`
   align-items: center;
   width: 50%;
 
-  div {
-    background-image: url(${props => props.logo});
-    height: 100px;
-    width: 100px;
-    background-position: center;
-    background-size: cover;
-  }
-
   h5 {
     margin: 0;
-    padding: 12px 0;
+    padding: 24px 0;
     text-transform: uppercase;
     text-align: center;
+    font-size: 0.75rem;
   }
 `
 
+const HeroLogoContainer = styled.div`
+  position: relative;
+  padding-top: 1rem;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const HeroLogoInner = styled.div`
+  position: relative;
+  width: 100%;
+`
 export default ({ skills, headerText }) => {
   const listSkills = skills.slice(1)
   const heroSkill = skills[0]
+  const HeroLogo = heroSkill.logo
   return (
     <SkillCard>
       <SkillHeader>{headerText}</SkillHeader>
       <SkillBody>
         <SkillHero>
-          <div />
+          <HeroLogoContainer>
+            <HeroLogoInner>
+              <HeroLogo />
+            </HeroLogoInner>
+          </HeroLogoContainer>
           <h5>
             <strong>{heroSkill.name}</strong>
           </h5>

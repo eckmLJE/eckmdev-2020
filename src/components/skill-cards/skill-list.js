@@ -19,11 +19,16 @@ const SkillItem = styled.li`
 
 const SkillIcon = styled.div`
   position: relative;
+  width: 30px;
+  height: 100%;
 `
 
 const SkillText = styled.h4`
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 0.75rem;
 `
 
 const Skills = ({ skills }) =>

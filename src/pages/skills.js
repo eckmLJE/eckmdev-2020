@@ -11,8 +11,8 @@ export default () => (
     <Summary>
       I'm a JavaScript engineer with a front end focus, possessing strong web
       fundamentals: ES6, semantic and accessible HTML, and advanced CSS. I have
-      a preference for working with React and Server-Side React frameworks like
-      Next and Gatsby.
+      a preference for working with React and Server-Side Rendered React
+      frameworks like Next and Gatsby.
     </Summary>
     <SkillCards skills={skills} />
   </>

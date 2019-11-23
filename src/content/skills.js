@@ -24,7 +24,7 @@ import TSLogo from "../components/images/typescript-logo"
 import GraphQLLogo from "../components/images/graphql-logo"
 import MapboxLogo from "../components/images/mapbox-logo"
 import D3Logo from "../components/images/d3-logo"
-// import ThreeLogo from "../components/images/three-logo"
+import ThreeLogo from "../components/images/three-logo"
 
 export default [
   {
@@ -124,6 +124,10 @@ export default [
       {
         name: "D3",
         logo: D3Logo,
+      },
+      {
+        name: "Three",
+        logo: ThreeLogo,
       },
     ],
   },

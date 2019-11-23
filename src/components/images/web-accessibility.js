@@ -6,7 +6,7 @@ export default () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
-        relativePath: { eq: "web-accessibility-icon.jpg" }
+        relativePath: { eq: "web-accessibility-logo.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 640) {
