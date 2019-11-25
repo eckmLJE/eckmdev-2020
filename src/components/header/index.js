@@ -1,6 +1,6 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import { Link } from "gatsby"
+import React from 'react'
+import styled, { css } from 'styled-components'
+import { Link } from 'gatsby'
 
 const Header = styled.header`
   position: relative;
@@ -10,6 +10,8 @@ const Header = styled.header`
   padding: 0.5rem 1rem;
 
   a {
+    position: relative;
+    display: block;
     text-decoration: none;
     color: hsla(0, 0%, 0%, 0.8);
 
@@ -41,15 +43,17 @@ const NavList = styled.ul`
 `
 const NavItem = styled.li`
   position: relative;
+  display: block;
   margin: 0;
   padding: 0.5rem 1rem;
 
   a {
-    border-bottom: 2px solid transparent;
-    transition: 300ms all ease-out;
+    color: hsla(0, 0%, 0%, 0.7);
+    transform: translateY(0);
+    transition: 200ms all ease-out;
 
     &:hover {
-      border-color: black;
+      transform: translateY(-1px);
     }
   }
 
@@ -57,7 +61,12 @@ const NavItem = styled.li`
     active &&
     css`
       a {
-        border-color: black;
+        color: black;
+        cursor: default;
+
+        &:hover {
+          transform: translateY(0);
+        }
       }
     `}
 `
@@ -71,10 +80,10 @@ export default ({ path }) => (
     </Link>
     <Nav>
       <NavList>
-        <NavItem active={path === "/skills/"}>
+        <NavItem active={path === '/skills/'}>
           <Link to="/skills">Skills</Link>
         </NavItem>
-        <NavItem active={path === "/portfolio/"}>
+        <NavItem active={path === '/portfolio/'}>
           <Link to="/portfolio">Portfolio</Link>
         </NavItem>
       </NavList>
