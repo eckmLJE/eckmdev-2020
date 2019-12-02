@@ -1,5 +1,5 @@
 import ctiaFighting from '../images/ctia-fighting.png'
-import accessibleAccordion from '../images/accessible-accordion.png'
+import accessibleAccordion from '../images/a11y-acc-silver.png'
 import cardRow from '../images/card-row.png'
 import tileGallery from '../images/tile-gallery.png'
 import horizontalScroll from '../images/horizontal-scroll-2.png'

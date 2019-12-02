@@ -16,11 +16,18 @@ const PortfolioCard = styled.a`
   transition: 300ms all ease-out;
   display: flex;
   overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 5px 35px -8px #ddd;
 
   &:hover {
     transform: scale(1.01);
-    background-color: #fff;
-    box-shadow: 0px 5px 35px -8px #ddd;
+  }
+
+  @media (max-width: 600px) {
+    flex-flow: column nowrap;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
   }
 `
 
@@ -28,9 +35,14 @@ const CardImageContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  top: 0;
   width: 35%;
   height: 100%;
+
+  @media (max-width: 600px) {
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 35%;
+  }
 `
 
 const CardImage = styled.img`
@@ -50,6 +62,14 @@ const CardContent = styled.div`
   margin-left: calc(35% + 0.5rem);
   height: 100%;
   padding-bottom: 50px;
+
+  @media (max-width: 600px) {
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-left: 0;
+    margin-top: calc(175px + 12px);
+    height: 65%;
+  }
 `
 
 const CardTitle = styled.h2`
@@ -66,9 +86,10 @@ const HighlightsList = styled.ul`
   margin: 0;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 
   li {
-    padding: 0 0.4rem;
+    padding: 0.4rem 0.4rem;
     margin: 0;
     font-size: 0.7rem;
     &:first-child {
