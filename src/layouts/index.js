@@ -9,6 +9,7 @@ const Main = styled.main`
 
   @media (max-width: 720px) {
     padding: 1rem;
+    padding-bottom: 4rem;
   }
 `
 
