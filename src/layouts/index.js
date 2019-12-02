@@ -5,7 +5,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 const Main = styled.main`
-  padding: 1rem 2rem 5rem;
+  padding: 1rem 2rem 4rem;
 
   @media (max-width: 720px) {
     padding: 1rem;
