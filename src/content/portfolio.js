@@ -1,13 +1,13 @@
-import ctiaFighting from '../images/ctia-fighting.png'
-import accessibleAccordion from '../images/a11y-acc-silver.png'
-import cardRow from '../images/card-row.png'
-import tileGallery from '../images/tile-gallery.png'
-import horizontalScroll from '../images/horizontal-scroll-2.png'
+import CtiaFighting from '../components/images/ctia-fighting'
+import AccessibleAccordion from '../components/images/accessible-accordion'
+import CardRow from '../components/images/card-row'
+import TileGallery from '../components/images/tile-gallery'
+import HorizontalScroll from '../components/images/horizontal-scroll'
 
 export default [
   {
     title: 'CTIA | Fighting Robocalls',
-    description: `Static site built in Gatsby with advanced CSS and SVG animations.`,
+    description: `Static site built in Gatsby with advanced CSS and SVG animations. Graceful degredation with JS disabled.`,
     highlights: [
       'Gatsby',
       'React',
@@ -16,7 +16,7 @@ export default [
       'Accessibility',
     ],
     link: 'https://fightingrobocalls.ctia.org/',
-    image: ctiaFighting,
+    image: CtiaFighting,
   },
   {
     title: 'Horizontal Scroll Effect',
@@ -24,7 +24,7 @@ export default [
       'Blog post written with Director of UX on the design and implementation of a horizontal scroll effect as carousel alternative.',
     highlights: ['React', 'Styled Components', 'CSS Animations'],
     link: 'https://sudo.isl.co/translate-vertical-horizontal/',
-    image: horizontalScroll,
+    image: HorizontalScroll,
   },
   {
     title: 'Card Row',
@@ -32,7 +32,7 @@ export default [
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--card-row',
-    image: cardRow,
+    image: CardRow,
   },
   {
     title: 'Tile Gallery',
@@ -41,7 +41,7 @@ export default [
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--tile-gallery',
-    image: tileGallery,
+    image: TileGallery,
   },
   {
     title: 'Accessible Accordion',
@@ -50,14 +50,6 @@ export default [
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--accessible-accordion',
-    image: accessibleAccordion,
+    image: AccessibleAccordion,
   },
-  // {
-  //   title: 'Language Line Length Comparison',
-  //   description:
-  //     'Compare lengths in pixels of various phrases across multiple languages.',
-  //   highlights: ['JavaScript', 'CSS'],
-  //   link: 'https://codesandbox.io/s/language-line-length-comparison-879t3',
-  //   image: '',
-  // },
 ]

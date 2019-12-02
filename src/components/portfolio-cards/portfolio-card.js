@@ -13,14 +13,15 @@ const PortfolioCard = styled.a`
   height: 250px;
   background-color: #eef0f7;
   border-radius: 10px;
-  transition: 300ms all ease-out;
+  transition: 200ms all ease-out;
   display: flex;
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0px 5px 35px -8px #ddd;
 
   &:hover {
-    transform: scale(1.01);
+    transform: translateY(-4px);
+    box-shadow: 5px 10px 40px -8px #ddd;
   }
 
   @media (max-width: 600px) {
@@ -100,11 +101,12 @@ const HighlightsList = styled.ul`
 
 export default ({ data }) => {
   const { title, description, highlights, link, image } = data
+  const PortfolioImage = image
   return (
     <PortfolioCardContainer>
       <PortfolioCard href={link} target="_blank">
         <CardImageContainer>
-          <CardImage src={image} />
+          <PortfolioImage />
         </CardImageContainer>
         <CardContent>
           <CardTitle>{title}</CardTitle>
