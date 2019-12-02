@@ -4,12 +4,15 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 import Summary from '../components/summary'
 import LucasSkateboard from '../components/images/lucas-skateboard-alley'
+import LucasBeach from '../components/images/lucas-beach-hero'
+import LucasBike from '../components/images/lucas-bike-hero'
 
 const LucasContainer = styled.div`
   position: relative;
   width: 90%;
   margin: 2rem auto;
   overflow: hidden;
+  /* max-height: 375px; */
 `
 
 export default () => (
@@ -21,7 +24,7 @@ export default () => (
         consultant living and working in Washington, DC.
       </Summary>
       <LucasContainer>
-        <LucasSkateboard />
+        <LucasBeach />
       </LucasContainer>
       <Summary>
         When I'm not engineering delightful, performant and accessible web

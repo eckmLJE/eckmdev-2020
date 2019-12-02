@@ -46,17 +46,6 @@ const CardImageContainer = styled.div`
   }
 `
 
-const CardImage = styled.img`
-  position: relative;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-  border-color: transparent;
-  margin: 0;
-  color: transparent;
-`
-
 const CardContent = styled.div`
   position: relative;
   width: 65%;
@@ -78,6 +67,10 @@ const CardTitle = styled.h2`
   padding-bottom: 0.5rem;
 `
 
+const CardBody = styled.p`
+  font-size: 15px;
+`
+
 const HighlightsList = styled.ul`
   position: absolute;
   bottom: 0;
@@ -87,15 +80,15 @@ const HighlightsList = styled.ul`
   margin: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  /* justify-content: space-between; */
 
   li {
-    padding: 0.4rem 0.4rem;
-    margin: 0;
+    padding: 8px 12px;
+    margin: 4px;
     font-size: 0.7rem;
-    &:first-child {
-      padding-left: 0;
-    }
+    background-color: #eef0f7;
+    border-radius: 4px;
+    flex-shrink: 0;
   }
 `
 
@@ -110,10 +103,10 @@ export default ({ data }) => {
         </CardImageContainer>
         <CardContent>
           <CardTitle>{title}</CardTitle>
-          <p>{description}</p>
+          <CardBody>{description}</CardBody>
           <HighlightsList>
-            {highlights.map(highlight => (
-              <li>{highlight}</li>
+            {highlights.map((highlight, i) => (
+              <li key={`highlight-${i}`}>{highlight}</li>
             ))}
           </HighlightsList>
         </CardContent>
