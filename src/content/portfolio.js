@@ -1,4 +1,8 @@
 import ctiaFighting from '../images/ctia-fighting.png'
+import accessibleAccordion from '../images/accessible-accordion.png'
+import cardRow from '../images/card-row.png'
+import tileGallery from '../images/tile-gallery.png'
+import horizontalScroll from '../images/horizontal-scroll-2.png'
 
 export default [
   {
@@ -17,25 +21,41 @@ export default [
   {
     title: 'Horizontal Scroll Effect',
     description:
-      'Read this blog post written in collaboration with Director of UX in which we describe the design thinking behind and technical implementation of a horizontal scroll effect as carousel alternative.',
+      'Blog post written with Director of UX on the design and implementation of a horizontal scroll effect as carousel alternative.',
     highlights: ['React', 'Styled Components', 'CSS Animations'],
     link: 'https://sudo.isl.co/translate-vertical-horizontal/',
-    image: '',
+    image: horizontalScroll,
   },
   {
     title: 'Card Row',
     description: 'Hand-coded slider component',
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
-      'https://lucid-einstein-5a2433.netlify.com/iframe.html?id=cards--card-row',
-    image: '',
+      'https://eckm-storybook.netlify.com/?path=/story/interfaces--card-row',
+    image: cardRow,
   },
   {
-    title: 'Language Line Length Comparison',
-    description:
-      'Compare lengths in pixels of various phrases across multiple languages.',
-    highlights: ['JavaScript', 'CSS'],
-    link: 'https://codesandbox.io/s/language-line-length-comparison-879t3',
-    image: '',
+    title: 'Tile Gallery',
+    description: 'Hand-coded slider component',
+    highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
+    link:
+      'https://eckm-storybook.netlify.com/?path=/story/interfaces--tile-gallery',
+    image: tileGallery,
   },
+  {
+    title: 'Accessible Accordion',
+    description: 'Hand-coded slider component',
+    highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
+    link:
+      'https://eckm-storybook.netlify.com/?path=/story/interfaces--accessible-accordion',
+    image: accessibleAccordion,
+  },
+  // {
+  //   title: 'Language Line Length Comparison',
+  //   description:
+  //     'Compare lengths in pixels of various phrases across multiple languages.',
+  //   highlights: ['JavaScript', 'CSS'],
+  //   link: 'https://codesandbox.io/s/language-line-length-comparison-879t3',
+  //   image: '',
+  // },
 ]
