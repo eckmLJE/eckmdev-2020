@@ -7,7 +7,7 @@ import horizontalScroll from '../images/horizontal-scroll-2.png'
 export default [
   {
     title: 'CTIA | Fighting Robocalls',
-    description: `Employed advanced CSS and interactive JavaScript in this static site built in Gatsby.`,
+    description: `Static site built in Gatsby with advanced CSS and SVG animations.`,
     highlights: [
       'Gatsby',
       'React',
@@ -28,7 +28,7 @@ export default [
   },
   {
     title: 'Card Row',
-    description: 'Hand-coded slider component',
+    description: 'Hand-coded slider component utilizing native scroll snap.',
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--card-row',
@@ -36,7 +36,8 @@ export default [
   },
   {
     title: 'Tile Gallery',
-    description: 'Hand-coded slider component',
+    description:
+      'Image-focused component accommodating varying numbers of tiles (use slider knob in storybook)',
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--tile-gallery',
@@ -44,7 +45,8 @@ export default [
   },
   {
     title: 'Accessible Accordion',
-    description: 'Hand-coded slider component',
+    description:
+      'Keyboard and screen reader accessible accordion with smooth expand and collapse.',
     highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--accessible-accordion',

@@ -11,8 +11,8 @@ export default () => (
     <main>
       <Summary>
         Highlighting first-class web products and experiences built in close
-        collaboration with UX and product team in a top-talent and
-        high-performance atmosphere.
+        collaboration with UX and product teams in a top-talent and
+        high-performance environment.
       </Summary>
       <PortfolioCards content={portfolioContent} />
     </main>

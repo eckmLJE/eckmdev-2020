@@ -59,7 +59,7 @@ const CardImage = styled.img`
 const CardContent = styled.div`
   position: relative;
   width: 65%;
-  margin-left: calc(35% + 0.5rem);
+  margin-left: calc(35% + 0.75rem);
   height: 100%;
   padding-bottom: 50px;
 

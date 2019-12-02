@@ -24,9 +24,9 @@ export default () => (
         <LucasSkateboard />
       </LucasContainer>
       <Summary>
-        When I'm not building delightful user interfaces to spec, you can find
-        me reading science fiction, playing video games, and riding my bicycle
-        through red lights.
+        When I'm not engineering delightful, performant and accessible web
+        experiences, you can find me reading science fiction, playing video
+        games, and riding my bicycle through red lights.
       </Summary>
     </main>
   </>
