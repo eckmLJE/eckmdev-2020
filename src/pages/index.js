@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 import SEO from '../components/seo'
 import Summary from '../components/summary'
-import LucasSkateboard from '../components/images/lucas-skateboard-alley'
 import LucasBeach from '../components/images/lucas-beach-hero'
-import LucasBike from '../components/images/lucas-bike-hero'
+// import LucasSkateboard from '../components/images/lucas-skateboard-alley'
+// import LucasBike from '../components/images/lucas-bike-hero'
 
 const LucasContainer = styled.div`
   position: relative;

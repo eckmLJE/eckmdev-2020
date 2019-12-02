@@ -8,13 +8,7 @@ export default [
   {
     title: 'CTIA | Fighting Robocalls',
     description: `Static site built in Gatsby with advanced CSS and SVG animations. Graceful degredation with JS disabled.`,
-    highlights: [
-      'Gatsby',
-      'React',
-      'Styled Components',
-      'SVG',
-      'Accessibility',
-    ],
+    highlights: ['Gatsby', 'React', 'SVG', 'Accessibility'],
     link: 'https://fightingrobocalls.ctia.org/',
     image: CtiaFighting,
   },
@@ -22,14 +16,14 @@ export default [
     title: 'Horizontal Scroll Effect',
     description:
       'Blog post written with Director of UX on the design and implementation of a horizontal scroll effect as carousel alternative.',
-    highlights: ['React', 'Styled Components', 'CSS Animations'],
+    highlights: ['React', 'CSS Animations'],
     link: 'https://sudo.isl.co/translate-vertical-horizontal/',
     image: HorizontalScroll,
   },
   {
     title: 'Card Row',
     description: 'Hand-coded slider component utilizing native scroll snap.',
-    highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
+    highlights: ['React', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--card-row',
     image: CardRow,
@@ -38,7 +32,7 @@ export default [
     title: 'Tile Gallery',
     description:
       'Image-focused component accommodating varying numbers of tiles (use slider knob in storybook)',
-    highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
+    highlights: ['React', 'JavaScript', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--tile-gallery',
     image: TileGallery,
@@ -47,7 +41,7 @@ export default [
     title: 'Accessible Accordion',
     description:
       'Keyboard and screen reader accessible accordion with smooth expand and collapse.',
-    highlights: ['React', 'Styled Components', 'JavaScript', 'CSS Animations'],
+    highlights: ['React', 'JavaScript', 'Accessibility', 'CSS Animations'],
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--accessible-accordion',
     image: AccessibleAccordion,
