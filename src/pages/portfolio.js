@@ -12,7 +12,8 @@ export default () => (
       <Summary>
         Highlighting first-class web products and experiences built in close
         collaboration with UX and product teams in a top-talent and
-        high-performance environment.
+        high-performance environment. Everything here is hand-coded without any
+        UI library.
       </Summary>
       <PortfolioCards content={portfolioContent} />
     </main>
