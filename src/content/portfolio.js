@@ -17,7 +17,8 @@ export default [
     description:
       'Blog post written with Director of UX on the design and implementation of a horizontal scroll effect as carousel alternative.',
     highlights: ['React', 'React Hooks', 'CSS Animations'],
-    link: 'https://sudo.isl.co/translate-vertical-horizontal/',
+    link:
+      'https://medium.com/@lucas.eckman/ditch-the-carousel-creating-a-horizontal-scroll-effect-7a36c0f1c456',
     image: HorizontalScroll,
   },
   {
