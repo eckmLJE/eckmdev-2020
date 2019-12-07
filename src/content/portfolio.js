@@ -3,6 +3,10 @@ import AccessibleAccordion from '../components/images/accessible-accordion'
 import CardRow from '../components/images/card-row'
 import TileGallery from '../components/images/tile-gallery'
 import HorizontalScroll from '../components/images/horizontal-scroll'
+import TSCalc from '../components/images/ts-calc'
+import EckmSS from '../components/images/eckm-ss'
+import LLLObj from '../components/images/lll-obj'
+import TextHighlights from '../components/images/text-highlights'
 
 export default [
   {
@@ -39,6 +43,22 @@ export default [
     image: TileGallery,
   },
   {
+    title: 'TypeScript Calculator',
+    description:
+      'Calculator written in TypeScript, adapated from tutorial in vanilla JS.',
+    highlights: ['TypeScript', 'JavaScript'],
+    link: 'https://codesandbox.io/s/ts-calc-izx7n',
+    image: TSCalc,
+  },
+  {
+    title: 'Language Line Length Comparison',
+    description:
+      'Given a JSON collection of phrases translated into various languages, compare rendered lengths in pixels.',
+    highlights: ['JavaScript', 'JSON'],
+    link: 'https://codesandbox.io/s/language-line-length-comparison-rqxdk',
+    image: LLLObj,
+  },
+  {
     title: 'Accessible Accordion',
     description:
       'Keyboard and screen reader accessible accordion with smooth expand and collapse.',
@@ -46,5 +66,20 @@ export default [
     link:
       'https://eckm-storybook.netlify.com/?path=/story/interfaces--accessible-accordion',
     image: AccessibleAccordion,
+  },
+  {
+    title: 'Saving Text Highlights',
+    description:
+      'Blog post describing an approach to recreate the text highlighting feature found on Medium and Genius.',
+    highlights: ['JavaScript', 'React', 'Redux'],
+    link: 'https://medium.com/@lucas.eckman/easy-as-1-2-3-cdca597f35a6',
+    image: TextHighlights,
+  },
+  {
+    title: 'eckm.dev',
+    description: 'Personal site built with Gatsby and deployed to Netlify.',
+    highlights: ['Gatsby', 'React', 'Styled Components'],
+    link: 'https://eckm.dev',
+    image: EckmSS,
   },
 ]
