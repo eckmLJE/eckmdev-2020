@@ -77,9 +77,9 @@ export default [
   },
   {
     title: 'eckm.dev',
-    description: 'Personal site built with Gatsby and deployed to Netlify.',
+    description: 'Personal site built with Gatsby and deployed to Netlify. (Links to GitHub)',
     highlights: ['Gatsby', 'React', 'Styled Components'],
-    link: 'https://eckm.dev',
+    link: 'https://github.com/eckmLJE/eckmdev-2020',
     image: EckmSS,
   },
 ]
