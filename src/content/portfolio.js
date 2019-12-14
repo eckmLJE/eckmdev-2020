@@ -30,7 +30,7 @@ export default [
     description: 'Hand-coded slider component utilizing native scroll snap.',
     highlights: ['React', 'JavaScript', 'CSS Animations'],
     link:
-      'https://eckm-storybook.netlify.com/?path=/story/interfaces--card-row',
+      'https://codesandbox.io/s/native-swiping-card-row-7ftfd',
     image: CardRow,
   },
   {
